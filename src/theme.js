@@ -1,0 +1,20 @@
+export const colors = {
+  primary: '#8E7CC3',
+  dark: '#5C4B8A',
+  pale: '#EDE7F6',
+  cream: '#FAF3E7',
+  softCream: '#F2E9DA',
+  pink: '#E9A6B4',
+  lavender: '#C9B8E8',
+  sunflower: '#F3C969',
+  text: '#4A3F5C',
+  gray: '#867A94',
+  white: '#FFFFFF',
+  petalRose: '#F0C4CE',
+  petalLilac: '#D9CCEF',
+  petalButter: '#F6E3B4',
+  petalSage: '#D8E2CE',
+  soil: '#E7D9C4',
+  danger: '#C0504D',
+};
+export const radius = { card: 18, button: 14 };

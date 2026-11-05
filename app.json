@@ -1,24 +1,39 @@
 {
   "expo": {
-    "name": "StudyStreakGarden",
-    "slug": "StudyStreakGarden",
-    "version": "1.0.0",
+    "name": "Study Streak Garden",
+    "slug": "study-streak-garden",
+    "version": "2.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "backgroundColor": "#FAF3E7",
+    "icon": "./assets/icon.png",
+
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.example.studystreakgarden",
+      "icon": "./assets/icon.png"
     },
+
     "android": {
+      "package": "com.example.studystreakgarden",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FAF3E7"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+
+    "plugins": [
+      ["expo-notifications", { "color": "#8E7CC3" }],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose a profile photo from your library.",
+          "cameraPermission": "Take a profile photo."
+        }
+      ],
+      "expo-audio",
+      "expo-sharing",
+      "expo-asset"
+    ]
   }
 }
